@@ -7,20 +7,97 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="mainContainer">
-      <h1>mirraLight</h1>
+    <div class="header">
+      <h1 class="h1">mirraLight</h1>
       <h2>-Ask a Question-</h2>
-      <ul>
-        <li>How's the weather?</li>
-        <li>What phase is the moon?</li>
-        <li>Whats the date and time?</li>
-      </ul>
-      <div class="button APIButton"><span>loadData</span></div>
-      <div class="button readInputButton"><span>Read Input</span></div>
-      <textarea></textarea>
     </div>
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=3IhtSFBF"></script>
+    <div class="mainContainer">
+      <div class="contentContainer">
+        <div class="promptsSection">
+          <h3>Try saying..</h3>
+          <ul>
+            <li>..How's the weather?</li>
+            <li>..What phase is the moon?</li>
+            <li>..Whats the date and time?</li>
+          </ul>
+        </div>
+        <img class="thumb" src="Thumbs/New Moon.png" />
+        <div class="buttonSection">
+          <div class="button APIButton"><span>loadData</span></div>
+          <div class="button readInputButton"><span>Read Input</span></div>
+          <textarea
+            placeholder="Type some text, I'll read to you..        Try saying 'read the text'"
+            `
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="speechRecogAttr footContainer">
+        Powered by
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API"
+          >Web Speech</a
+        >
+      </div>
+      <div class="moonAttr footContainer">
+        Moon Images attributed to
+        <a href="http://www.freepik.com">Designed by Freepik</a>
+      </div>
+      <div class="speechAttr footContainer">
+        responsiveVoice attributed to
+        <div
+          style="
+            width: 300px;
+            vertical-align: top;
+            font-family: Arial;
+            font-size: 9pt;
+            line-height: normal;
+          "
+        >
+          <a rel="license" href="//responsivevoice.org/"
+            ><img
+              title="ResponsiveVoice Text To Speech"
+              src="https://responsivevoice.org/wp-content/uploads/2014/08/120x31.png"
+              style="float: left; padding-right: 2px" /></a
+          ><span xmlns:dct="https://purl.org/dc/terms/" property="dct:title"
+            ><a
+              href="//responsivevoice.org/"
+              target="_blank"
+              title="ResponsiveVoice Text To Speech"
+              >ResponsiveVoice</a
+            ></span
+          >
+          used under
+          <a
+            rel="license"
+            href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+            title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License"
+            >Non-Commercial License</a
+          >
+        </div>
+        <div style="clear: both">&nbsp;</div>
+      </div>
+      <div class="weatherAttr footContainer">
+        Powered by
+        <a href="https://www.weatherapi.com/" title="Weather API"
+          >WeatherAPI.com</a
+        >
+        <a href="https://www.weatherapi.com/" title="Free Weather API"
+          ><img
+            src="//cdn.weatherapi.com/v4/images/weatherapi_logo.png"
+            alt="Weather data by WeatherAPI.com"
+            border="0"
+        /></a>
+      </div>
+      <div class="geoAttr footContainer">
+        Powered by <a href="https://www.geoapify.com/">Geoapify</a>
+      </div>
+    </div>
+    <script src="funStyle.js"></script>
     <script src="config.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=3IhtSFBF"></script>
+
     <script src="app.js"></script>
   </body>
 </html>

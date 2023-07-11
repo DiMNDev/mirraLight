@@ -1,3 +1,8 @@
 config.js
 .*vscode
 *.mov
+funStyle.js
+*.DS_Store
+.app2.js
+*.ai
+*.eps
